@@ -26,6 +26,8 @@ class Menu extends Component {
               <MenuItem componentClass={Link} href="/star-wars/1" to="/star-wars/1">Luke Skywalker</MenuItem>
               <MenuItem componentClass={Link} href="/star-wars/2" to="/star-wars/2">C-3PO</MenuItem>
               <MenuItem componentClass={Link} href="/star-wars/3" to="/star-wars/3">R2-D2</MenuItem>
+              <MenuItem divider />
+              <MenuItem componentClass={Link} href="/star-wars-preloaded/4" to="/star-wars-preloaded/4">Darth Vader</MenuItem>
             </NavDropdown>
           </Nav>
           <Nav pullRight>

@@ -1,23 +1,28 @@
 import React, { Component } from 'react';
 import SEO from 'components/SEO';
 
-class StarWars extends Component {
+class StarWarsPreloaded extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
+    const data = (props.hasOwnProperty('staticContext') && typeof props.staticContext !== 'undefined') ? props.staticContext : window.__INITIAL_DATA__;
 
     this.state = {
-      isLoading: true,
+      isLoading: !props.hasOwnProperty('staticContext'),
+      ...data
     };
   }
- 
+
   componentDidMount() {
-    this.setState({ isLoading: true }, () => {
-      fetch(`https://swapi.co/api/people/${this.props.match.params.id}/`)
-        .then(response => response.json())
-        .then(data => this.setState(data))
-        .then(() => this.setState({ isLoading: false }));
-    });
+    if (!this.state.name) {
+      this.setState({ isLoading: true }, () => {
+        fetch(`https://swapi.co/api/people/${this.props.match.params.id}/`)
+          .then(response => response.json())
+          .then(data => this.setState(data))
+          .then(() => this.setState({ isLoading: false }));
+      });
+    }
   }
 
   componentDidUpdate(prevProps) {
@@ -49,6 +54,7 @@ class StarWars extends Component {
       </SEO>
     );
   }
+
   render() {
     if (this.state.isLoading) {
       return this.renderLoader();
@@ -58,4 +64,4 @@ class StarWars extends Component {
   }
 }
 
-export default StarWars;
+export default StarWarsPreloaded;
