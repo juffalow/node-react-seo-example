@@ -27,6 +27,7 @@
     "build": "PUBLIC_URL=http://localhost:8088 react-scripts build",
     "server": "PUBLIC_URL=http://localhost:8088 react-scripts build && NODE_PATH=src/ __IS_SSR__=true babel-node server.js",
     "server2": "PUBLIC_URL=http://localhost:8088 react-scripts build && __IS_SSR__=true node server.js",
+    "server_windows": "set PUBLIC_URL=http://localhost:8088&&react-scripts build && babel-node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
