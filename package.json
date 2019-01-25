@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "amibot": "^1.0.0",
     "express": "^4.16.4",
     "puppeteer": "^1.11.0",
     "react": "^16.7.0",

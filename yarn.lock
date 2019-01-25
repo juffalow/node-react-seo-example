@@ -1231,6 +1231,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+amibot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/amibot/-/amibot-1.0.0.tgz#288266572ab70bfd7fbddff9b56ac2421e96fc84"
+  integrity sha1-KIJmVyq3C/1/vd/5tWrCQh6W/IQ=
+
 ansi-colors@^3.0.0:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/ansi-colors/-/ansi-colors-3.2.3.tgz#57d35b8686e851e2cc04c403f1c00203976a1813"
