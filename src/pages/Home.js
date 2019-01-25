@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SEO from 'components/SEO';
+import SEO from '../components/SEO';
 
 class Home extends Component {
   render() {

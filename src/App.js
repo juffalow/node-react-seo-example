@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import Menu from 'components/Menu';
-import HomePage from 'pages/Home';
-import WhateverPage from 'pages/Whatever';
-import HelpPage from 'pages/Help';
-import StarWarsPage from 'pages/StarWars';
-import StarWarsPreloaded from 'pages/StarWarsPreloaded';
+import Menu from './components/Menu';
+import HomePage from './pages/Home';
+import WhateverPage from './pages/Whatever';
+import HelpPage from './pages/Help';
+import StarWarsPage from './pages/StarWars';
+import StarWarsPreloaded from './pages/StarWarsPreloaded';
 
 class App extends Component {
   render() {
