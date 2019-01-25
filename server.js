@@ -96,7 +96,7 @@ app.get('/star-wars/:id', async (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.withFile('build/index.html');
+  res.sendFile('./build/index.html', {root: './'});
 });
 
 async function start() {
